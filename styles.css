@@ -1,6 +1,8 @@
+/* Fondo oscuro elegante */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #121212; /* Casi negro */
+    color: #fff; /* Texto blanco */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,15 +10,31 @@ body {
     margin: 0;
   }
   
+  /* Contenedor centrado */
   .container {
     text-align: center;
+    background: rgba(255, 255, 255, 0.1); /* Efecto sutil de transparencia */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
   
+  /* Botón mejorado */
   #botonAbrir {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(135deg, #ff5733, #ff8c00); /* Degradado naranja */
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 20px;
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  #botonAbrir:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.7);
   }
   
   .sobre {
@@ -58,4 +76,82 @@ body {
     border-radius: 8px;
   }
   
+  @keyframes giro {
+    0% { transform: rotateY(0deg); }
+    50% { transform: rotateY(180deg); }
+    100% { transform: rotateY(360deg); }
+  }
   
+  .animacion-legendaria {
+    animation: giro 0.6s ease-out;
+  }
+  
+  /* Efecto de brillos para cartas kks */
+@keyframes brillos {
+    0% { box-shadow: 0 0 10px gold; }
+    50% { box-shadow: 0 0 20px gold, 0 0 30px orange; }
+    100% { box-shadow: 0 0 10px gold; }
+  }
+  
+  .animacion-kks {
+    animation: brillos 0.5s infinite alternate;
+  }
+
+  /* Media query para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;  /* Ajuste del tamaño de fuente */
+    }
+
+    /* Ajustar el contenedor para pantallas más pequeñas */
+    .container {
+        padding: 10px;
+        width: 90%;  /* Hacer que ocupe un mayor porcentaje del ancho */
+        border-radius: 5px;
+    }
+
+    /* Botón más pequeño y más fácil de pulsar */
+    #botonAbrir {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    /* Las cartas deben adaptarse y ser más pequeñas */
+    .carta {
+        width: 80px;  /* Reducir el tamaño de las cartas */
+        height: 120px;
+    }
+
+    /* Hacer que las cartas se acomoden en una sola columna en pantallas pequeñas */
+    .cartas {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Media query para pantallas muy pequeñas (como teléfonos en orientación vertical) */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 5px;
+        width: 95%;  /* Aumentar el tamaño para ocupar más espacio */
+    }
+
+    #botonAbrir {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    /* Las cartas ahora serán aún más pequeñas */
+    .carta {
+        width: 60px;
+        height: 100px;
+    }
+
+    .cartas {
+        gap: 5px;  /* Reducir espacio entre cartas */
+    }
+}
