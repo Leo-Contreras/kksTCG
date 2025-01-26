@@ -4,7 +4,7 @@ const cartasPorRareza = {
       carpeta: "imagenes/comun/",
       probabilidad: 80, // 75% de aparecer
       borde: "3px solid green",
-      numCartas: 67, // Número total de cartas para la rareza común
+      numCartas: 71, // Número total de cartas para la rareza común
       mejora: "raro"
     },
     raro: {
