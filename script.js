@@ -124,7 +124,7 @@ function abrirSobre() {
             botonAbrir.textContent = "Abrir un nuevo sobre";
             botonAbrir.disabled = false;
         }
-    }, 500); // Mostrar cada carta cada 0.5 segundo
+    }, 500); // Mostrar cada carta cada .5 segundo
 }
 
 // Evento para abrir el sobre

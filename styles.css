@@ -165,3 +165,49 @@ body {
         grid-column: span 2;
     }
 }
+
+/* Estilos para el cuadro de probabilidades */
+.probabilidades {
+    background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Asegurar que la lista no tenga estilos predeterminados molestos */
+.probabilidades ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Espaciado entre líneas */
+.probabilidades li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Colores de texto iguales a los bordes de las cartas */
+.comun {
+    color: #aaa; /* Gris claro */
+}
+
+.rara {
+    color: #007bff; /* Azul */
+}
+
+.legendaria {
+    color: #ff9800; /* Naranja */
+}
+
+.kks {
+    color: #ff0000; /* Rojo fuerte */
+}
+
+/* Asegurar que el texto se destaque */
+.probabilidades strong {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
