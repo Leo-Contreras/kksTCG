@@ -190,19 +190,19 @@ body {
 
 /* Colores de texto iguales a los bordes de las cartas */
 .comun {
-    color: #aaa; /* Gris claro */
+    color: green;
 }
 
-.rara {
-    color: #007bff; /* Azul */
+.raro {
+    color: blue;
 }
 
-.legendaria {
-    color: #ff9800; /* Naranja */
+.legendario {
+    color: red;
 }
 
 .kks {
-    color: #ff0000; /* Rojo fuerte */
+    color: gold;
 }
 
 /* Asegurar que el texto se destaque */
@@ -211,3 +211,4 @@ body {
     font-size: 18px;
     font-weight: bold;
 }
+
