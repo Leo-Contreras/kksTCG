@@ -18,7 +18,7 @@ const cartasPorRareza = {
       carpeta: "imagenes/legendario/",
       probabilidad: 4.5, // 4.5% de aparecer
       borde: "3px solid red",
-      numCartas: 14, // Número total de cartas para la rareza legendaria
+      numCartas: 15, // Número total de cartas para la rareza legendaria
       mejora: "kks"
     },
     kks: {
