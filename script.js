@@ -4,28 +4,28 @@ const cartasPorRareza = {
       carpeta: "imagenes/comun/",
       probabilidad: 80, // 75% de aparecer
       borde: "3px solid green",
-      numCartas: 71, // Número total de cartas para la rareza común
+      numCartas: 93, // Número total de cartas para la rareza común
       mejora: "raro"
     },
     raro: {
       carpeta: "imagenes/raro/",
       probabilidad: 15, // 20% de aparecer
       borde: "3px solid blue",
-      numCartas: 22, // Número total de cartas para la rareza rara
+      numCartas: 26, // Número total de cartas para la rareza rara
       mejora: "legendario"
     },
     legendario: {
       carpeta: "imagenes/legendario/",
       probabilidad: 4.5, // 4.5% de aparecer
       borde: "3px solid red",
-      numCartas: 16, // Número total de cartas para la rareza legendaria
+      numCartas: 18, // Número total de cartas para la rareza legendaria
       mejora: "kks"
     },
     kks: {
       carpeta: "imagenes/kks/",
       probabilidad: 0.5, // 0.5% de aparecer
       borde: "3px solid gold",
-      numCartas: 4, // Número total de cartas para la rareza kks
+      numCartas: 5, // Número total de cartas para la rareza kks
     },
 };
   
