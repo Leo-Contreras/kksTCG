@@ -37,6 +37,21 @@ body {
     box-shadow: 0 0 15px rgba(255, 140, 0, 0.7);
 }
 
+.sobreCERRADO-wrapper {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .sobreCERRADO-wrapper:hover {
+    transform: scale(1.1);
+  }
+  
+  .sobreCERRADO {
+    width: 120px;
+    height: auto;
+    animation: flotar 3s infinite;
+  }
 .sobre {
     display: flex;
     justify-content: center;
@@ -212,3 +227,31 @@ body {
     font-weight: bold;
 }
 
+
+/* Animación de flotación */
+@keyframes flotar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+
+  .sobreCERRADO-wrapper {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer; /* Cambia el cursor cuando pases sobre los sobres */
+    transition: transform 0.3s ease; /* Agrega una transición suave */
+  }
+  
+  .sobreCERRADO-wrapper:hover {
+    transform: scale(1.1); /* Aumenta el tamaño cuando pasas el mouse */
+  }
+  
+  
+  
